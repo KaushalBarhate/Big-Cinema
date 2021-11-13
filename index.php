@@ -54,7 +54,7 @@
     </div>
     <div id="home-section-2" class="services-section">
         <h1>How it works</h1>
-        <h3>3 Simple steps to book your favourit movie!</h3>
+        <h3>3 Simple steps to book your favourite movie!</h3>
 
         <div class="services-container">
             <div class="service-item">
