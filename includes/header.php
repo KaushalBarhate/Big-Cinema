@@ -9,7 +9,6 @@
             <li><a href="index.php">Home</a></li>
             <li><a href="schedule.php">Schedule</a></li>
             <li><a href="#">Actors</a></li>
-           
             <li><a href="contact-us.php">Contact</a></li>
         </ul>
     </nav>
