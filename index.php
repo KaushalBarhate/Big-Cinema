@@ -29,7 +29,7 @@
             <?php
                         if($result = mysqli_query($link, $sql)){
                             if(mysqli_num_rows($result) > 0){
-                                for ($i = 0; $i <= 6; $i++){
+                                for ($i = 0; $i <= 5; $i++){
                                     $row = mysqli_fetch_array($result);
                                     echo '<div class="movie-box owl-item">';
                                     echo '<img src="'. $row['movieImg'] .'" alt=" ">';
