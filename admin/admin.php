@@ -21,8 +21,8 @@
     $moviesNo=mysqli_num_rows(mysqli_query($link, "SELECT * FROM movieTable"));
     ?>
     <div class="admin-section-header">
-        <div class="admin-logo">
-            Big Cinema
+        <div class="admin-logo"><a href="../login.html">
+            Big Cinema</a>
         </div>
         <div class="admin-login-info">
             <i class="far fa-bell admin-notification-button"></i>

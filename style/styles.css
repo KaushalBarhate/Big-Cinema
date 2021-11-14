@@ -1071,6 +1071,7 @@ color: #796700;
   height: 100vh;
   font-family: "Lato", "sans-serif";
 }
+
 .movie-container {
   margin: 20px 0;
 }
@@ -1095,9 +1096,13 @@ color: #796700;
 
 .seat {
   background-color: #fff;
-  height: 12px;
-  width: 15px;
-  margin: 3px;
+  height: 24px;
+  width: 30px;
+  margin: 6px;
+  color: black;
+  text-align: center;
+  font-size: 14px;
+  padding: 2px 0 0 0;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -1151,6 +1156,11 @@ color: #796700;
 
 .row {
   display: flex;
+}
+
+.row-name {
+  padding-top: 8px;
+  padding-right: 5px;
 }
 
 .screen {

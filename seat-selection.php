@@ -18,7 +18,7 @@
 <div class="booking-panel-section booking-panel-section2" onclick="window.history.go(-1); return false;">
             <i class="fas fa-2x fa-times"></i>
         </div>
-<div class="movie-container">
+    <!-- <div class="movie-container">
       <label>Pick a movie:</label>
       <select id="movie">
         <option value="10">Avengers: Endgame ($10)</option>
@@ -26,7 +26,7 @@
         <option value="8">Toy Story 4 ($8)</option>
         <option value="9">The Lion King ($9)</option>
       </select>
-    </div>
+    </div> -->
 
     <ul class="showcase">
       <li>
@@ -48,68 +48,74 @@
     <div class="container">
       <div class="screen"></div>
       <div class="row">
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
+        <div class="row-name">A</div>
+        <div class="seat">1</div>
+        <div class="seat">2</div>
+        <div class="seat">3</div>
+        <div class="seat">4</div>
+        <div class="seat">5</div>
+        <div class="seat">6</div>
+        <div class="seat">7</div>
+        <div class="seat">8</div>
       </div>
       <div class="row">
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat occupied"></div>
-        <div class="seat occupied"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-      </div>
-
-      <div class="row">
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat occupied"></div>
-        <div class="seat occupied"></div>
+        <div class="row-name">B</div>
+        <div class="seat">1</div>
+        <div class="seat">2</div>
+        <div class="seat">3</div>
+        <div class="seat">4</div>
+        <div class="seat">5</div>
+        <div class="seat">6</div>
+        <div class="seat">7</div>
+        <div class="seat">8</div>
       </div>
 
       <div class="row">
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
+        <div class="row-name">C</div>
+        <div class="seat">1</div>
+        <div class="seat">2</div>
+        <div class="seat">3</div>
+        <div class="seat">4</div>
+        <div class="seat">5</div>
+        <div class="seat">6</div>
+        <div class="seat">7</div>
+        <div class="seat">8</div>
       </div>
 
       <div class="row">
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat occupied"></div>
-        <div class="seat occupied"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
+        <div class="row-name">D</div>
+        <div class="seat">1</div>
+        <div class="seat">2</div>
+        <div class="seat">3</div>
+        <div class="seat">4</div>
+        <div class="seat">5</div>
+        <div class="seat">6</div>
+        <div class="seat">7</div>
+        <div class="seat">8</div>
       </div>
 
       <div class="row">
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat"></div>
-        <div class="seat occupied"></div>
-        <div class="seat occupied"></div>
-        <div class="seat occupied"></div>
-        <div class="seat"></div>
+        <div class="row-name">E</div>
+        <div class="seat">1</div>
+        <div class="seat">2</div>
+        <div class="seat">3</div>
+        <div class="seat">4</div>
+        <div class="seat">5</div>
+        <div class="seat">6</div>
+        <div class="seat">7</div>
+        <div class="seat">8</div>
+      </div>
+
+      <div class="row">
+        <div class="row-name">F</div>
+        <div class="seat">1</div>
+        <div class="seat">2</div>
+        <div class="seat">3</div>
+        <div class="seat">4</div>
+        <div class="seat">5</div>
+        <div class="seat">6</div>
+        <div class="seat">7</div>
+        <div class="seat">8</div>
       </div>
     </div>
 
