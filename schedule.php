@@ -44,7 +44,7 @@
                             <h3>Private Hall</h3>
                             <div>
                                 <div class="schedule-item"><i class="far fa-clock"></i></div>
-                                <div class="schedule-item">09:00 AM</div>
+                                <a href="seat-selection.php"><div class="schedule-item">09:00 AM</div></a>
                                 <div class="schedule-item">11:30 AM</div>
                                 <div class="schedule-item">06:00 PM</div>
                             </div>
