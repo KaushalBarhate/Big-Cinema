@@ -20,7 +20,7 @@
     <link rel="icon" type="image/png" href="img/logo.png">
 </head>
 
-<body style="background-color:#6e5a11;">
+<body style="background-color:#04192e;">
     <div class="booking-panel">
         <div class="booking-panel-section booking-panel-section1">
             <h1>RESERVE YOUR TICKET</h1>
@@ -40,12 +40,12 @@
             <div class="movie-information">
                 <table>
                     <tr>
-                        <td>GENGRE</td>
+                        <td>GENRE</td>
                         <td><?php echo $row['movieGenre']; ?></td>
                     </tr>
                     <tr>
                         <td>DURATION</td>
-                        <td><?php echo $row['movieDuration']; ?></td>
+                        <td><?php echo $row['movieDuration'];echo " mins"; ?></td>
                     </tr>
                     <tr>
                         <td>RELEASE DATE</td>
