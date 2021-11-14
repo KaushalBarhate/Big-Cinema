@@ -66,9 +66,9 @@
 
                     <select name="theatre" required>
                         <option value="" disabled selected>THEATRE</option>
-                        <option value="main-hall">Main Hall</option>
-                        <option value="vip-hall">VIP Hall</option>
-                        <option value="private-hall">Private Hall</option>
+                        <option value="INOX">INOX</option>
+                        <option value="Cinepolis">Cinépolis</option>
+                        <option value="pvr-cinemas">PVR Cinemas</option>
                     </select>
 
                     <select name="type" required>

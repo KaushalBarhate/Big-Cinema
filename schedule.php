@@ -34,14 +34,14 @@
                         <h2>Dune</h2>
                         <i class="far fa-clock"></i> 125m <i class="fas fa-desktop"></i> IMAX
                         <h3>SYNOPSIS</h3>
-                        <p>Ethan and team take on their most impossible mission yet, eradicating the Syndicate - an International rogue organization
+                        <p>Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people.     
                         </p>
                         <div class="schedule-item"> DETAILS</a>
                         </div>
                     </td>
                     <td>
                         <div class="hall-type">
-                            <h3>Private Hall</h3>
+                            <h3>PVR Cinemas</h3>
                             <div>
                                 <div class="schedule-item"><i class="far fa-clock"></i></div>
                                 <a href="seat-selection.php"><div class="schedule-item">09:00 AM</div></a>
@@ -50,7 +50,7 @@
                             </div>
                         </div>
                         <div class="hall-type">
-                            <h3>VIP Hall</h3>
+                            <h3>Cinépolis</h3>
                             <div>
                                 <div class="schedule-item"><i class="far fa-clock"></i></div>
                                 <div class="schedule-item">09:00 AM</div>
@@ -59,47 +59,7 @@
                             </div>
                         </div>
                         <div class="hall-type">
-                            <h3>Main Hall</h3>
-                            <div>
-                                <div class="schedule-item"><i class="far fa-clock"></i></div>
-                                <div class="schedule-item">09:00 AM</div>
-                                <div class="schedule-item">11:30 AM</div>
-                                <div class="schedule-item">06:00 PM</div>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-                <tr class="fade-scroll">
-                    <td>
-                        <h2>Dune</h2>
-                        <i class="far fa-clock"></i> 125m <i class="fas fa-desktop"></i> IMAX
-                        <h3>SYNOPSIS</h3>
-                        <p>Ethan and team take on their most impossible mission yet, eradicating the Syndicate - an International rogue organization
-                        </p>
-                        <div class="schedule-item"> DETAILS</a>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="hall-type">
-                            <h3>Private Hall</h3>
-                            <div>
-                                <div class="schedule-item"><i class="far fa-clock"></i></div>
-                                <div class="schedule-item">09:00 AM</div>
-                                <div class="schedule-item">11:30 AM</div>
-                                <div class="schedule-item">06:00 PM</div>
-                            </div>
-                        </div>
-                        <div class="hall-type">
-                            <h3>VIP Hall</h3>
-                            <div>
-                                <div class="schedule-item"><i class="far fa-clock"></i></div>
-                                <div class="schedule-item">09:00 AM</div>
-                                <div class="schedule-item">11:30 AM</div>
-                                <div class="schedule-item">06:00 PM</div>
-                            </div>
-                        </div>
-                        <div class="hall-type">
-                            <h3>Main Hall</h3>
+                            <h3>INOX</h3>
                             <div>
                                 <div class="schedule-item"><i class="far fa-clock"></i></div>
                                 <div class="schedule-item">09:00 AM</div>
@@ -114,14 +74,14 @@
                         <h2>Dune</h2>
                         <i class="far fa-clock"></i> 125m <i class="fas fa-desktop"></i> IMAX
                         <h3>SYNOPSIS</h3>
-                        <p>Ethan and team take on their most impossible mission yet, eradicating the Syndicate - an International rogue organization
+                        <p>Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people.
                         </p>
                         <div class="schedule-item"> DETAILS</a>
                         </div>
                     </td>
                     <td>
                         <div class="hall-type">
-                            <h3>Private Hall</h3>
+                            <h3>PVR Cinemas</h3>
                             <div>
                                 <div class="schedule-item"><i class="far fa-clock"></i></div>
                                 <div class="schedule-item">09:00 AM</div>
@@ -130,7 +90,7 @@
                             </div>
                         </div>
                         <div class="hall-type">
-                            <h3>VIP Hall</h3>
+                            <h3>Cinépolis</h3>
                             <div>
                                 <div class="schedule-item"><i class="far fa-clock"></i></div>
                                 <div class="schedule-item">09:00 AM</div>
@@ -139,7 +99,47 @@
                             </div>
                         </div>
                         <div class="hall-type">
-                            <h3>Main Hall</h3>
+                            <h3>INOX</h3>
+                            <div>
+                                <div class="schedule-item"><i class="far fa-clock"></i></div>
+                                <div class="schedule-item">09:00 AM</div>
+                                <div class="schedule-item">11:30 AM</div>
+                                <div class="schedule-item">06:00 PM</div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="fade-scroll">
+                    <td>
+                        <h2>Dune</h2>
+                        <i class="far fa-clock"></i> 125m <i class="fas fa-desktop"></i> IMAX
+                        <h3>SYNOPSIS</h3>
+                        <p>Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people.
+                        </p>
+                        <div class="schedule-item"> DETAILS</a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="hall-type">
+                            <h3>PVR Cinemas</h3>
+                            <div>
+                                <div class="schedule-item"><i class="far fa-clock"></i></div>
+                                <div class="schedule-item">09:00 AM</div>
+                                <div class="schedule-item">11:30 AM</div>
+                                <div class="schedule-item">06:00 PM</div>
+                            </div>
+                        </div>
+                        <div class="hall-type">
+                            <h3>Cinépolis</h3>
+                            <div>
+                                <div class="schedule-item"><i class="far fa-clock"></i></div>
+                                <div class="schedule-item">09:00 AM</div>
+                                <div class="schedule-item">11:30 AM</div>
+                                <div class="schedule-item">06:00 PM</div>
+                            </div>
+                        </div>
+                        <div class="hall-type">
+                            <h3>INOX</h3>
                             <div>
                                 <div class="schedule-item"><i class="far fa-clock"></i></div>
                                 <div class="schedule-item">09:00 AM</div>
