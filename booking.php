@@ -98,14 +98,14 @@
                         <option value="24-00">12:00 PM</option>
                     </select>
 
-                    <input placeholder="First Name" type="text" name="fName" required>
+                    <!-- <input placeholder="First Name" type="text" name="fName" required>
 
                     <input placeholder="Last Name" type="text" name="lName">
 
-                    <input placeholder="Phone Number" type="text" name="pNumber" required>
+                    <input placeholder="Phone Number" type="text" name="pNumber" required> -->
 
                    <button type="submit" value="submit" name="submit" class="form-btn"> Book a Seat</button>
-                    <?php
+                    <!-- <?php
                     $fNameErr = $pNumberErr= "";
                     $fName = $pNumber = "";
             
@@ -143,7 +143,7 @@
                                         '".$_POST["pNumber"]."')";
                         mysqli_query($link,$insert_query);
                         }
-                    ?>
+                    ?> -->
                 </form>
             </div>
         </div>
