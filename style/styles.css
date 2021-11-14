@@ -463,13 +463,13 @@ footer {
 
 .booking-panel-section4 {
   border-radius: 10px;
-  border: 1px #6e5a11 solid;
+  border: 1px #04192e solid;
   background-color: #fff;
 }
 
 .booking-panel-section4 > .title {
   border-bottom: #969696 1px solid;
-  color: #6e5a11;
+  color: #04192e;
   padding: 0 0 15px 0;
   margin: 0 0 15px 0;
   font-size: 24pt;
@@ -493,7 +493,7 @@ footer {
 }
 
 .booking-form-container {
-  background-color: #6e5a11;
+  background-color: #04192e;
   width: 100%;
   padding: 25px;
   margin: 20px 0;
@@ -514,7 +514,7 @@ footer {
   float: right;
   width: 25%;
   text-align: center;
-  background-color: #a3861e;
+  background-color: #05125c;
   color: #fff;
   transition: all 0.7s ease;
   cursor: pointer;
@@ -522,7 +522,7 @@ footer {
 }
 
 .booking-form-container form button:hover {
-  background-color: #b6b6b6;
+  background-color: #796700;
 }
 
 .booking-form-container form select {
@@ -559,13 +559,17 @@ footer {
 /* Schedule Styling */
 
 .schedule-section {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
+  background: #04192e;
+  color: #ffffff;
+
 }
 
 .schedule-section > h1 {
   padding: 0 0 20px 0;
   margin: 0 0 40px 0;
+  margin-left: 10px;
   border-bottom: 1px solid #bdbdbd;
   color: #6e5a11;
 }
