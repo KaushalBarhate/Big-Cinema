@@ -62,7 +62,7 @@
                 </table>
             </div>
             <div class="booking-form-container">
-                <form action="" method="POST">
+                <form action="seat-selection.php" method="POST">
 
                     <select name="theatre" required>
                         <option value="" disabled selected>THEATRE</option>
@@ -104,7 +104,7 @@
 
                     <input placeholder="Phone Number" type="text" name="pNumber" required>
 
-                    <button type="submit" value="submit" name="submit" class="form-btn">Book a Seat</button>
+                   <button type="submit" value="submit" name="submit" class="form-btn"> Book a Seat</button>
                     <?php
                     $fNameErr = $pNumberErr= "";
                     $fName = $pNumber = "";
