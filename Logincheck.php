@@ -21,6 +21,11 @@ if (!empty($EMAIL)  || !empty($PASSWORD1))
                 die();
                 break;
             }
+            // else{
+            //     header("Location: login.html");
+            //     die();
+            //     break;
+            // }
 
         }
     }
