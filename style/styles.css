@@ -84,7 +84,7 @@ nav {
 
 .navbar ul li:hover {
   cursor: pointer;
-  background-color: #796700;
+  background-color: #ffcb05;
 }
 
 .navbar ul li:hover > a {
@@ -183,7 +183,7 @@ footer {
 }
 
 .movie-show-container > h1 {
-  color: #796700;
+  color: #ffcb05;
   text-align: left;
   padding: 0 0 10px 0;
 }
@@ -199,7 +199,7 @@ footer {
   display: block;
   height: 3px;
   width: 7%;
-  background: #796700;
+  background: #ffcb05;
   position: relative;
   bottom: -10px;
 }
@@ -286,7 +286,7 @@ footer {
   display: block;
   height: 3px;
   width: 7%;
-  background: #6e5a11;
+  background: #ffcb05;
   position: relative;
   bottom: -10px;
 }
@@ -362,7 +362,7 @@ footer {
 }
 
 .services-section > h1 {
-  color: #796700;
+  color: #ffcb05;
   text-align: left;
   padding: 0 0 10px 0;
 }
@@ -378,7 +378,7 @@ footer {
   display: block;
   height: 3px;
   width: 7%;
-  background: #796700;
+  background: #ffcb05;
   position: relative;
   bottom: -10px;
 }
@@ -391,7 +391,7 @@ footer {
 }
 
 .service-item > h2 {
-  color: #796700;
+  color: #ffcb05;
   padding: 25px 0;
 }
 
@@ -433,7 +433,7 @@ footer {
 }
 
 .booking-panel-section1 > h1 {
-color: #796700;
+  color: #ffcb05;
 }
 
 .booking-panel-section2 {
@@ -526,7 +526,7 @@ color: #796700;
 }
 
 .booking-form-container form button:hover {
-  background-color: #796700;
+  background-color: #ffcb05;
 }
 
 .booking-form-container form select {
@@ -563,11 +563,13 @@ color: #796700;
 /* Schedule Styling */
 
 .schedule-section {
-  width: 100%;
-  margin: 0 auto;
+  /* width: 80%; */
+  /* margin: 0 auto; */
+  border-width: 0 92px;
+  border-style: solid;
+  border-color: #04192e;
   background: #04192e;
   color: #ffffff;
-
 }
 
 .schedule-section > h1 {
@@ -575,7 +577,7 @@ color: #796700;
   margin: 0 0 40px 0;
   margin-left: 10px;
   border-bottom: 1px solid #bdbdbd;
-  color: #6e5a11;
+  color: #ffcb05;
 }
 
 .schedule-dates {
@@ -586,7 +588,7 @@ color: #796700;
 
 .schedule-item {
   padding: 15px;
-  background-color: #6e5a11;
+  background-color: #b49207;
   margin-right: 10px;
   color: #fff;
   cursor: pointer;
@@ -611,7 +613,7 @@ color: #796700;
 
 .schedule-table table tr th {
   padding: 10px 0 10px 40px;
-  background-color: #6e5a11;
+  background-color: #b49207;
   border: 1px solid #b6b6b6;
   color: #fff;
 }
@@ -837,7 +839,7 @@ color: #796700;
 }
 
 .admin-section1 ul li:hover {
-  background-color: #6e5a11;
+  background-color: #b49207;
   color: #fff;
   border-left: #fff 3px solid;
 }

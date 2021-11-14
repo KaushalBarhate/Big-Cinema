@@ -14,7 +14,7 @@
     </div>
 </div>
 <div class="footer-section  footer-section3">
-    <p>© 2019 iMovies. Created by Group 14. </p>
+    <p>© 2021 KAK. </p>
     <a>Advertising</a>
     <a>Privacy Policy</a>
     <a>Contact </a>

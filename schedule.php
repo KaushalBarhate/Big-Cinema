@@ -17,11 +17,11 @@
     <div class="schedule-section">
         <h1>Schedule</h1>
         <div class="schedule-dates">
-            <div class="schedule-item">March 10,2019</div>
-            <div class="schedule-item schedule-item-selected">March 11,2019</div>
-            <div class="schedule-item">March 12,2019</div>
-            <div class="schedule-item">March 13,2019</div>
-            <div class="schedule-item">March 14,2019</div>
+            <div class="schedule-item">November 12,2021</div>
+            <div class="schedule-item schedule-item-selected">November 13,2021</div>
+            <div class="schedule-item">November 14,2021</div>
+            <div class="schedule-item">November 15,2021</div>
+            <div class="schedule-item">November 16,2021</div>
         </div>
         <div class="schedule-table">
             <table>
