@@ -31,7 +31,7 @@
                 </tr>
                 <tr class="fade-scroll">
                     <td>
-                        <h2>Captain Marvel</h2>
+                        <h2>Dune</h2>
                         <i class="far fa-clock"></i> 125m <i class="fas fa-desktop"></i> IMAX
                         <h3>SYNOPSIS</h3>
                         <p>Ethan and team take on their most impossible mission yet, eradicating the Syndicate - an International rogue organization
@@ -71,7 +71,7 @@
                 </tr>
                 <tr class="fade-scroll">
                     <td>
-                        <h2>Captain Marvel</h2>
+                        <h2>Dune</h2>
                         <i class="far fa-clock"></i> 125m <i class="fas fa-desktop"></i> IMAX
                         <h3>SYNOPSIS</h3>
                         <p>Ethan and team take on their most impossible mission yet, eradicating the Syndicate - an International rogue organization
@@ -111,7 +111,7 @@
                 </tr>
                 <tr class="fade-scroll">
                     <td>
-                        <h2>Captain Marvel</h2>
+                        <h2>Dune</h2>
                         <i class="far fa-clock"></i> 125m <i class="fas fa-desktop"></i> IMAX
                         <h3>SYNOPSIS</h3>
                         <p>Ethan and team take on their most impossible mission yet, eradicating the Syndicate - an International rogue organization
