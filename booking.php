@@ -20,10 +20,10 @@
     <link rel="icon" type="image/png" href="img/logo.png">
 </head>
 
-<body style="background-color:#04192e;">
+<body style="background-color:#05125c;">
     <div class="booking-panel">
         <div class="booking-panel-section booking-panel-section1">
-            <h1>RESERVE YOUR TICKET</h1>
+            <h1>BOOK YOUR TICKET</h1>
         </div>
         <div class="booking-panel-section booking-panel-section2" onclick="window.history.go(-1); return false;">
             <i class="fas fa-2x fa-times"></i>
