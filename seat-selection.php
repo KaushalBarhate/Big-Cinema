@@ -13,11 +13,18 @@
 
 <!-- <header></header> -->
 
-<body>
+<body style="background-color: #05125c">
 <div class="seat-selection">
-<div class="booking-panel-section booking-panel-section2" onclick="window.history.go(-1); return false;">
+
+  <div class="seat-title">
+      <div class="booking-panel-section booking-panel-section1">
+            <h1>SELECT YOUR SEATS</h1>
+      </div>
+  
+    <div class="booking-panel-section booking-panel-section2" onclick="window.history.go(-1); return false;">
             <i class="fas fa-2x fa-times"></i>
-        </div>
+     </div>
+  </div>
     <!-- <div class="movie-container">
       <label>Pick a movie:</label>
       <select id="movie">
@@ -121,8 +128,9 @@
 
     <p class="text">
       You have selected <span id="count">0</span> seats for a price of $<span id="total">0</span>
+    <br>
+    <button type="submit" value="confirm" name="confirm" class="seat-selection-button">Confirm</button>
     </p>
-
 </div>
     <!-- <footer></footer> -->
 
