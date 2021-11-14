@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Lato");
 @import url("https://fonts.googleapis.com/css?family=Lobster");
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 
 * {
   margin: 0;
@@ -25,6 +26,7 @@ header {
 .navbar-brand {
   height: 20em;
   overflow: hidden;
+  background: #04192e;
 }
 
 .navbar-brand:before {
@@ -35,22 +37,22 @@ header {
   left: -25%;
   height: 219%;
   width: 200%;
-  background: #cca943;
+  background: #05125c;
   box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.1);
   transform: rotateZ(-6deg) skew(-6deg);
 }
 
 .navbar-brand .navbar-heading {
   position: absolute;
-  top: 4vmax;
+  top: 2vmax;
   left: 2vmax;
   padding: 0;
   margin: 0;
   color: #fff;
   font-size: 7em;
-  font-family: "Lobster", cursive;
+  font-family: "Monoton", cursive;
   transform: rotateZ(-6deg);
-  text-shadow: 2px 2px 0px #6e5a11, 4px 4px 0px #836d24, 6px 6px 0px #a88616, 8px 8px 0px #b08909, 10px 10px 0px #ab995e;
+  text-shadow: 2px 2px 0px #030f57, 4px 4px 0px #04146d, 6px 6px 0px #061c99, 8px 8px 0px #0823bb, 10px 10px 0px #0b27c9;
 }
 
 nav {
@@ -79,11 +81,11 @@ nav {
 
 .navbar ul li:hover {
   cursor: pointer;
-  background-color: #000000;
+  background-color: #796700;
 }
 
 .navbar ul li:hover > a {
-  color: #b6b6b6;
+  color: #ffffff;
 }
 
 .navbar-menu li ul {
@@ -114,7 +116,7 @@ footer {
   display: grid;
   grid-gap: 5px;
   padding: 10px 10%;
-  background-color: #4e4e4e;
+  background-color: #04192e;
   color: #fff;
   bottom: 0;
   width: 100%;
@@ -173,16 +175,17 @@ footer {
 .movie-show-container {
   margin-top: 0;
   padding: 0 10%;
+  background: #04192e;
 }
 
 .movie-show-container > h1 {
-  color: #6e5a11;
+  color: #796700;
   text-align: left;
   padding: 0 0 10px 0;
 }
 
 .movie-show-container > h3 {
-  color: #969696;
+  color: #ffffff;
   text-align: left;
   padding: 0 0 10px 0;
 }
@@ -192,7 +195,7 @@ footer {
   display: block;
   height: 3px;
   width: 7%;
-  background: #6e5a11;
+  background: #796700;
   position: relative;
   bottom: -10px;
 }
@@ -351,16 +354,17 @@ footer {
 .services-section {
   padding: 0 10%;
   text-align: center;
+  background: #04192e;
 }
 
 .services-section > h1 {
-  color: #6e5a11;
+  color: #796700;
   text-align: left;
   padding: 0 0 10px 0;
 }
 
 .services-section > h3 {
-  color: #969696;
+  color: #ffffff;
   text-align: left;
   padding: 0 0 20px 0;
 }
@@ -370,7 +374,7 @@ footer {
   display: block;
   height: 3px;
   width: 7%;
-  background: #6e5a11;
+  background: #796700;
   position: relative;
   bottom: -10px;
 }
@@ -383,7 +387,7 @@ footer {
 }
 
 .service-item > h2 {
-  color: #6e5a11;
+  color: #796700;
   padding: 25px 0;
 }
 
