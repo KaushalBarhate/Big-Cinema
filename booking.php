@@ -100,7 +100,7 @@
                         <option value="21-00">09:00 PM</option>
                         <option value="24-00">12:00 PM</option>
                     </select>
-                    <button type="submit" value="submit1" name="submit" class="form-btn"> Confirm Details</button>';
+                    <button type="submit" value="submit1" name="submit" class="form-btn" style="margin-left:170px"> Confirm Details</button>';
 </form>
 <?php
 

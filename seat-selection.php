@@ -41,13 +41,13 @@
 
       <li>
         <div class="seat selected"></div>
-        <small>Selected</small>
-      </li>
-
-      <li>
-        <div class="seat occupied"></div>
         <small>Occupied</small>
       </li>
+
+      <!-- <li>
+        <div class="seat occupied"></div>
+        <small>Occupied</small>
+      </li> -->
     </ul>
 
     <div class="container">
@@ -178,8 +178,8 @@
       </div>
     </div>
 
-    <form name="myform"  method="POST">
-    <input type="text" name="seat" placeholder="Enter Seat Number" required="">
+    <form name="myform"  method="POST" style="display:flex;flex-direction:column;color:black">
+    <input type="text" name="seat" placeholder="Enter Seat Number"style="text-align:center" required="">
     <button type="submit" value="confirm" name="confirm" class="seat-selection-button">Confirm</button>
     </form>
    
