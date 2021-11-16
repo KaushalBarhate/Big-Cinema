@@ -26,8 +26,8 @@
         <div class="booking-panel-section booking-panel-section1">
             <h1>BOOK YOUR TICKET</h1>
         </div>
-        <div class="booking-panel-section booking-panel-section2" onclick="window.history.go(-1); return false;">
-            <i class="fas fa-2x fa-times"></i>
+        <div class="booking-panel-section booking-panel-section2">
+            <i class="fas fa-2x fa-times" onclick="window.history.go(-1); return false;"></i>
         </div>
         <div class="booking-panel-section booking-panel-section3">
             <div class="movie-box">
