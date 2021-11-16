@@ -32,7 +32,7 @@
         </div>
     </div>
     <div class="admin-container">
-        <div class="admin-section admin-section1 ">
+        <!-- <div class="admin-section admin-section1 ">
             <ul>
                 <li><i class="fas fa-sliders-h"></i><a href="admin.php">Dashboard </a><i class="fas admin-dropdown fa-chevron-right"></i></li>
                 <li><i class="fas fa-ticket-alt"></i><a href="">Bookings</a> <i class="fas admin-dropdown fa-chevron-right"></i></li>
@@ -45,7 +45,7 @@
                 </ul>
                 <li><i class="fas fa-film"></i>Movies <i class="fas admin-dropdown fa-chevron-right"></i></li>
             </ul>
-        </div>
+        </div> -->
         <div class="admin-section admin-section2">
             <div class="admin-section-column">
                 <div class="admin-section-panel admin-section-stats">
@@ -59,11 +59,11 @@
                         <h2 style="color: #4547cf"><?php echo $moviesNo ?></h2>
                         <h3>Movies</h3>
                     </div>
-                    <div class="admin-section-stats-panel">
+                    <!-- <div class="admin-section-stats-panel">
                         <i class="fas fa-ticket-alt" style="background-color: #bb3c95"></i>
                         <h2 style="color: #bb3c95">dummy</h2>
                         <h3>Dummy</h3>
-                    </div>
+                    </div> -->
                     <div class="admin-section-stats-panel" style="border: none">
                         <i class="fas fa-envelope" style="background-color: #3cbb6c"></i>
                         <h2 style="color: #3cbb6c"><?php echo $messagesNo ?></h2>
@@ -96,9 +96,9 @@
                                     echo "                                    <h4>". $row['bookingTime'] ."</h4>\n";
                                     echo "                                </div>\n";
                                     echo "                                <div>\n";
-                                    echo "                                    <h4>". $row['bookingFName'] ." ". $row['bookingLName'] ."</h4>\n";
+                                    echo "                                    <h4>". $row['Email']."</h4>\n";
                                     echo "                                    <i class=\"fas fa-circle\"></i>\n";
-                                    echo "                                    <h4>". $row['bookingPNumber'] ."</h4>\n";
+                                    echo "                                    <h4>". $row['bookingPNumber'] ."</h4>\n";  
                                     echo "                                </div>\n";
                                     echo "                            </div>\n";
                                     echo "                        </div>";
