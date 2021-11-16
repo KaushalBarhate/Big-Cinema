@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- <?php -->
+//         $id=$_GET['type'];
+// ?>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,11 +14,13 @@
     <link rel="icon" type="image/png" href="img/logo.png">
 </head>
 <body>
-    <header></header>
+   
     <div>
-        
+        <?php
+            echo $id;
+        ?>
     </div>
-    <footer></footer>
+    
 
     <script src="scripts/jquery-3.3.1.min.js "></script>
     <script src="scripts/owl.carousel.min.js "></script>

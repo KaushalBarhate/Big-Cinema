@@ -25,8 +25,8 @@
         <div class="booking-panel-section booking-panel-section1">
             <h1>BOOK YOUR TICKET</h1>
         </div>
-        <div class="booking-panel-section booking-panel-section2" onclick="window.history.go(-1); return false;">
-            <i class="fas fa-2x fa-times"></i>
+        <div class="booking-panel-section booking-panel-section2" >
+            <i class="fas fa-2x fa-times" onclick="window.history.go(-1); return false;"></i>
         </div>
         <div class="booking-panel-section booking-panel-section3">
             <div class="movie-box">
@@ -62,7 +62,7 @@
                 </table>
             </div>
             <div class="booking-form-container">
-                <form action="seat-selection.php" method="POST">
+               <?php echo '<form action="seat-selection.php?id='.$row['movieID'].' method="POST">'; ?>
 
                     <select name="theatre" required>
                         <option value="" disabled selected>THEATRE</option>
@@ -103,8 +103,8 @@
                     <input placeholder="Last Name" type="text" name="lName">
 
                     <input placeholder="Phone Number" type="text" name="pNumber" required> -->
-
-                   <button type="submit" value="submit" name="submit" class="form-btn"> Book a Seat</button>
+                    <?php
+                   echo '<button type="submit" value='.$id.' name="submit" class="form-btn"> Book a Seat</button>'; ?>
                     <!-- <?php
                     $fNameErr = $pNumberErr= "";
                     $fName = $pNumber = "";
@@ -144,7 +144,7 @@
                         mysqli_query($link,$insert_query);
                         }
                     ?> -->
-                </form>
+                </form> 
             </div>
         </div>
     </div>

@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php
+    $theatre = $_GET['theatre'];
+    $type = $_GET['type'];
+    $date = $_GET['date'];
+    $hour = $_GET['hour'];
 
+?>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +17,7 @@
     <title>Seat Selection</title>
 </head>
 
-<!-- <header></header> -->
+
 
 <body style="background-color: #05125c">
 <div class="seat-selection">
@@ -21,8 +27,8 @@
             <h1>SELECT YOUR SEATS</h1>
       </div>
   
-    <div class="booking-panel-section booking-panel-section2" onclick="window.history.go(-1); return false;">
-            <i class="fas fa-2x fa-times"></i>
+    <div class="booking-panel-section booking-panel-section2" >
+            <i class="fas fa-2x fa-times" onclick="window.history.go(-1); return false;"></i>
      </div>
   </div>
     <!-- <div class="movie-container">
@@ -129,10 +135,16 @@
     <p class="text">
       You have selected <span id="count">0</span> seats for a price of $<span id="total">0</span>
     <br>
-    <button type="submit" value="confirm" name="confirm" class="seat-selection-button">Confirm</button>
-    </p>
+  <button onclick="document.location='confirmation.php'" type="submit" value="confirm" name="confirm" class="seat-selection-button">Confirm</button>
+  <!-- <?php  
+      echo $theatre;
+      echo $type;
+      echo $date;
+      echo $hour;
+  ?> -->
+  </p>
 </div>
-    <!-- <footer></footer> -->
+    <
 
     <script src="scripts/jquery-3.3.1.min.js "></script>
     <script src="scripts/owl.carousel.min.js "></script>
