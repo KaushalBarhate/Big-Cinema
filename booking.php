@@ -84,11 +84,11 @@
 
                     <select name="date" required>
                         <option value="" disabled selected>DATE</option>
-                        <option value="12-3">November 20,2021</option>
-                        <option value="13-3">November 21,2021</option>
-                        <option value="14-3">November 22,2021</option>
-                        <option value="15-3">November 23,2021</option>
-                        <option value="16-3">November 24,2021</option>
+                        <option value="20-11">November 20,2021</option>
+                        <option value="21-11">November 21,2021</option>
+                        <option value="22-11">November 22,2021</option>
+                        <option value="23-11">November 23,2021</option>
+                        <option value="24-11">November 24,2021</option>
                     </select>
 
                     <select name="hour" required>
