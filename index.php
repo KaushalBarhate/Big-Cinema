@@ -16,6 +16,8 @@
 
 <body>
     <?php
+    $EMAIL = $_GET['Email'];
+
     $link = mysqli_connect("localhost", "root", "", "cinema_db");
     $sql = "SELECT * FROM movieTable";
     ?>
@@ -35,7 +37,7 @@
                                     echo '<img src="'. $row['movieImg'] .'" alt=" ">';
                                     echo '<div class="movie-info ">';
                                     echo '<h3>'. $row['movieTitle'] .'</h3>';
-                                    echo '<a href="booking.php?id='.$row['movieID'].'"><i class="fas fa-ticket-alt"></i> Book a seat</a>';
+                                    echo '<a href="booking.php?id='.$row['movieID'].'&Email='.$EMAIL.'"><i class="fas fa-ticket-alt"></i> Book a seat</a>';
                                     echo '</div>';
                                     echo '</div>';
                                 }
