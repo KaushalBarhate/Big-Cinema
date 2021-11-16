@@ -64,11 +64,11 @@
                         <h2 style="color: #bb3c95">dummy</h2>
                         <h3>Dummy</h3>
                     </div> -->
-                    <div class="admin-section-stats-panel" style="border: none">
+                    <!-- <div class="admin-section-stats-panel" style="border: none">
                         <i class="fas fa-envelope" style="background-color: #3cbb6c"></i>
                         <h2 style="color: #3cbb6c"><?php echo $messagesNo ?></h2>
                         <h3>Messages</h3>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="admin-section-panel admin-section-panel1">
                     <div class="admin-panel-section-header">
@@ -80,6 +80,7 @@
                         if($result = mysqli_query($link, $sql)){
                             if(mysqli_num_rows($result) > 0){
                                 while($row = mysqli_fetch_array($result)){
+                                    $movie_name=$row['movieName'];
                                     echo "<div class=\"admin-panel-section-booking-item\">\n";
                                     echo "                            <div class=\"admin-panel-section-booking-response\">\n";
                                     echo "                                <i class=\"fas fa-check accept-booking\" title=\"Verify booking\"></i>\n";
@@ -94,11 +95,18 @@
                                     echo "                                    <h4>". $row['bookingDate'] ."</h4>\n";
                                     echo "                                    <i class=\"fas fa-circle \"></i>\n";
                                     echo "                                    <h4>". $row['bookingTime'] ."</h4>\n";
+                                    
+                                    $link1 = mysqli_connect("localhost", "root", "", "cinema_db");
+                                    $sql1 = "SELECT price FROM movietable WHERE movieTitle='$movie_name'";
+                                    $result1 = mysqli_query($link1, $sql1);
+                                    $row1 = mysqli_fetch_array($result1);
+                                    echo "                                    <i class=\"fas fa-circle \"></i>\n";
+                                    echo "                                    <h4>₹". $row1['price'] ."</h4>\n";
                                     echo "                                </div>\n";
                                     echo "                                <div>\n";
                                     echo "                                    <h4>". $row['Email']."</h4>\n";
-                                    echo "                                    <i class=\"fas fa-circle\"></i>\n";
-                                    echo "                                    <h4>". $row['bookingPNumber'] ."</h4>\n";  
+                                    // echo "                                    <i class=\"fas fa-circle\"></i>\n";
+                                    // echo "                                    <h4>". $row['bookingPNumber'] ."</h4>\n";  
                                     echo "                                </div>\n";
                                     echo "                            </div>\n";
                                     echo "                        </div>";
@@ -150,18 +158,21 @@
                 </div>
             </div>
             <div class="admin-section-column">
-                <div class="admin-section-panel admin-section-panel4">
+                 <!-- <div class="admin-section-panel admin-section-panel4">
                     <div class="admin-panel-section-header">
                         <h2>Schedule</h2>
                         <i class="fas fa-clock" style="background-color: #3cbb6c"></i>
                     </div>
-                </div>
+                </div> -->
                 <div class="admin-section-panel admin-section-panel5">
                     <div class="admin-panel-section-header">
                         <h2>To-do List</h2>
                         <i class="fas fa-list-ol" style="background-color: #bb3c95"></i>
                     </div>
-                    <div class="admin-panel-section-content"></div>
+                    <div class="admin-panel-section-content" style="font-size: 20px;margin-left: 5px;"><ul>
+                        <li>Add schedule page</li> 
+                        <li>Add trailer section</li>
+                    </ul></div>
                 </div>
             </div>
         </div>
