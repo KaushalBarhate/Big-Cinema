@@ -60,6 +60,10 @@
                         <td>ACTORS</td>
                         <td><?php echo $row['movieActors']; ?></td>
                     </tr>
+                    <tr>
+                        <td>PRICE</td>
+                        <td><?php echo '₹'; echo $row['price']; ?></td>
+                    </tr>
                 </table>
             </div>
             <div class="booking-form-container">
@@ -100,7 +104,7 @@
                         <option value="21-00">09:00 PM</option>
                         <option value="24-00">12:00 PM</option>
                     </select>
-                    <button type="submit" value="submit1" name="submit" class="form-btn" style="margin-left:170px"> Confirm Details</button>';
+                    <button type="submit" value="submit1" name="submit" class="form-btn" style="margin-left:176px"> Confirm Details</button>';
 </form>
 <?php
 
