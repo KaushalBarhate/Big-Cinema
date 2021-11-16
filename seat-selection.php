@@ -241,7 +241,7 @@
     }
     echo '<form id="3" action="confirmation.php?Email='.$EMAIL.'&moviename='.$movieName.'&bookingTheatre='.$bookingTheatre.'&bookingType='.$bookingType.'&bookingDate='.$bookingDate.'&bookingTime='.$bookingTime.'" name="myform"  method="POST">';
     echo'<br>';
-    echo '<button type="submit" value="confirm3" name="confirm3" class="seat-selection-button">Go to Confirmation page</button>';
+    echo '<button type="submit" value="confirm3" name="confirm3" class="seat-selection-button">Proceed</button>';
     echo '</form>';
       
     ?>
