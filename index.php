@@ -16,26 +16,28 @@
 
 <body>
     <?php
+    $EMAIL = $_GET['Email'];
+
     $link = mysqli_connect("localhost", "root", "", "cinema_db");
     $sql = "SELECT * FROM movieTable";
     ?>
     <header></header>
     <div id="home-section-1" class="movie-show-container">
-        <h1>Currently Showing</h1>
-        <h3>Book a movie now</h3>
+        <h1>Premiering Now</h1>
+        <h3>Book a movie</h3>
 
         <div class="movies-container owl-carousel">
 
             <?php
                         if($result = mysqli_query($link, $sql)){
                             if(mysqli_num_rows($result) > 0){
-                                for ($i = 0; $i <= 6; $i++){
+                                for ($i = 0; $i <= 5; $i++){
                                     $row = mysqli_fetch_array($result);
                                     echo '<div class="movie-box owl-item">';
                                     echo '<img src="'. $row['movieImg'] .'" alt=" ">';
                                     echo '<div class="movie-info ">';
                                     echo '<h3>'. $row['movieTitle'] .'</h3>';
-                                    echo '<a href="booking.php?id='.$row['movieID'].'"><i class="fas fa-ticket-alt"></i> Book a seat</a>';
+                                    echo '<a href="booking.php?id='.$row['movieID'].'&Email='.$EMAIL.'"><i class="fas fa-ticket-alt"></i> Book a seat</a>';
                                     echo '</div>';
                                     echo '</div>';
                                 }
@@ -54,7 +56,7 @@
     </div>
     <div id="home-section-2" class="services-section">
         <h1>How it works</h1>
-        <h3>3 Simple steps to book your favourit movie!</h3>
+        <h3>3 Simple steps to book your favourite movie!</h3>
 
         <div class="services-container">
             <div class="service-item">
@@ -62,21 +64,21 @@
                     <i class="fas fa-4x fa-video"></i>
                 </div>
                 <h2>1. Choose your favourite movie</h2>
-                <p>choose the movie you want to watch at our theaters</p>
-            </div>
-            <div class="service-item">
-                <div class="service-item-icon">
-                    <i class="fas fa-4x fa-credit-card"></i>
-                </div>
-                <h2>2. Pay for your tickets</h2>
-                <p>choose the movie you want to watch at our theaters</p>
+                <!-- <p>choose the movie you want to watch at our theaters</p> -->
             </div>
             <div class="service-item">
                 <div class="service-item-icon">
                     <i class="fas fa-4x fa-theater-masks"></i>
                 </div>
-                <h2>3. Pick your seats & Enjoy watching</h2>
-                <p>choose the movie you want to watch at our theaters</p>
+                <h2>2. Select your seats</h2>
+                <!-- <p>choose the movie you want to watch at our theaters</p> -->
+            </div>
+            <div class="service-item">
+                <div class="service-item-icon">
+                    <i class="fas fa-4x fa-credit-card"></i>
+                </div>
+                <h2>3. Pay for your tickets</h2>
+                <!-- <p>choose the movie you want to watch at our theaters</p> -->
             </div>
             <div class="service-item"></div>
             <div class="service-item"></div>

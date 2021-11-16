@@ -2,6 +2,7 @@
 <html lang="en">
 <?php 
         $id = $_GET['id'];
+        $EMAIL=$_GET['Email'];
         $link = mysqli_connect("localhost", "root", "", "cinema_db");
 
         $movieQuery = "SELECT * FROM movieTable WHERE movieID = $id"; 
@@ -20,10 +21,10 @@
     <link rel="icon" type="image/png" href="img/logo.png">
 </head>
 
-<body style="background-color:#6e5a11;">
+<body style="background-color:#05125c;">
     <div class="booking-panel">
         <div class="booking-panel-section booking-panel-section1">
-            <h1>RESERVE YOUR TICKET</h1>
+            <h1>BOOK YOUR TICKET</h1>
         </div>
         <div class="booking-panel-section booking-panel-section2" onclick="window.history.go(-1); return false;">
             <i class="fas fa-2x fa-times"></i>
@@ -40,12 +41,12 @@
             <div class="movie-information">
                 <table>
                     <tr>
-                        <td>GENGRE</td>
+                        <td>GENRE</td>
                         <td><?php echo $row['movieGenre']; ?></td>
                     </tr>
                     <tr>
                         <td>DURATION</td>
-                        <td><?php echo $row['movieDuration']; ?></td>
+                        <td><?php echo $row['movieDuration'];echo " mins"; ?></td>
                     </tr>
                     <tr>
                         <td>RELEASE DATE</td>
@@ -62,13 +63,15 @@
                 </table>
             </div>
             <div class="booking-form-container">
-                <form action="" method="POST">
+                
+                <form id="1" method="POST">';
+            
 
                     <select name="theatre" required>
                         <option value="" disabled selected>THEATRE</option>
-                        <option value="main-hall">Main Hall</option>
-                        <option value="vip-hall">VIP Hall</option>
-                        <option value="private-hall">Private Hall</option>
+                        <option value="INOX">INOX</option>
+                        <option value="Cinepolis">Cinépolis</option>
+                        <option value="pvr-cinemas">PVR Cinemas</option>
                     </select>
 
                     <select name="type" required>
@@ -81,11 +84,11 @@
 
                     <select name="date" required>
                         <option value="" disabled selected>DATE</option>
-                        <option value="12-3">March 12,2019</option>
-                        <option value="13-3">March 13,2019</option>
-                        <option value="14-3">March 14,2019</option>
-                        <option value="15-3">March 15,2019</option>
-                        <option value="16-3">March 16,2019</option>
+                        <option value="12-3">November 20,2021</option>
+                        <option value="13-3">November 21,2021</option>
+                        <option value="14-3">November 22,2021</option>
+                        <option value="15-3">November 23,2021</option>
+                        <option value="16-3">November 24,2021</option>
                     </select>
 
                     <select name="hour" required>
@@ -97,54 +100,19 @@
                         <option value="21-00">09:00 PM</option>
                         <option value="24-00">12:00 PM</option>
                     </select>
+                    <button type="submit" value="submit1" name="submit" class="form-btn"> Confirm Details</button>';
+</form>
+<?php
 
-                    <input placeholder="First Name" type="text" name="fName" required>
-
-                    <input placeholder="Last Name" type="text" name="lName">
-
-                    <input placeholder="Phone Number" type="text" name="pNumber" required>
-
-                    <button type="submit" value="submit" name="submit" class="form-btn">Book a Seat</button>
-                    <?php
-                    $fNameErr = $pNumberErr= "";
-                    $fName = $pNumber = "";
+if(isset($_POST["submit"])){
+                echo '<form id="2" action="seat-selection.php?Email='.$EMAIL.'&moviename='.$row['movieTitle'].'&bookingTheatre='.$_POST["theatre"].'&bookingType='.$_POST["type"].'&bookingDate='.$_POST["date"].'&bookingTime='.$_POST["hour"].'" method="POST">';
+                
+                
+                   echo '<button type="submit" value="submit" name="submit" class="form-btn"> Book a Seat</button>';
+                   echo '</form>';
+}
+?>
             
-                    if(isset($_POST['submit'])){
-                     
-            
-                        $fName = $_POST['fName'];
-                        if (!preg_match('/^[a-zA-Z0-9\s]+$/', $fName)) {
-                            $fNameErr = 'Name can only contain letters, numbers and white spaces';
-                            echo "<script type='text/javascript'>alert('$fNameErr');</script>";
-                        }   
-            
-                        $pNumber = $_POST['pNumber'];
-                        if (preg_match("/^[0-9]{3}-[0-9]{4}-[0-9]{4}$/", $pNumber)) {
-                            $pNumberErr = 'Phone Number can only contain numbers and white spaces';
-                            echo "<script type='text/javascript'>alert('$pNumberErr');</script>";
-                        } 
-                        
-                        $insert_query = "INSERT INTO 
-                        bookingTable (  movieName,
-                                        bookingTheatre,
-                                        bookingType,
-                                        bookingDate,
-                                        bookingTime,
-                                        bookingFName,
-                                        bookingLName,
-                                        bookingPNumber)
-                        VALUES (        '".$row['movieTitle']."',
-                                        '".$_POST["theatre"]."',
-                                        '".$_POST["type"]."',
-                                        '".$_POST["date"]."',
-                                        '".$_POST["hour"]."',
-                                        '".$_POST["fName"]."',
-                                        '".$_POST["lName"]."',
-                                        '".$_POST["pNumber"]."')";
-                        mysqli_query($link,$insert_query);
-                        }
-                    ?>
-                </form>
             </div>
         </div>
     </div>

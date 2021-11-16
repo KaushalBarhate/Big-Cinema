@@ -43,8 +43,8 @@ CREATE TABLE IF NOT EXISTS `bookingTable` (
 --
 
 INSERT INTO `bookingTable` (`bookingID`, `movieName`, `bookingTheatre`, `bookingType`, `bookingDate`, `bookingTime`, `bookingFName`, `bookingLName`, `bookingPNumber`) VALUES
-(19, 'Captain Marvel', 'main-hall', '3d', '13-3', '15-00', 'Ahmed', 'Ismael', '010152658930'),
-(22, 'The Lego Movie', 'vip-hall', 'imax', '13-3', '18-00', 'Kareem', 'Ahmed', '01589965');
+(19, 'Captain Marvel', 'INOX', '3d', '13-3', '15-00', 'Ahmed', 'Ismael', '010152658930'),
+(22, 'The Lego Movie', 'Cinepolis', 'imax', '13-3', '18-00', 'Kareem', 'Ahmed', '01589965');
 
 -- --------------------------------------------------------
 
