@@ -203,7 +203,8 @@
             $a=1;
             echo "Seat is booked, Pick another seat";
             echo '<form id="2" name="myform"  method="POST">';
-            echo '<input type="text" name="seat" placeholder="Enter Seat Number Again" required="">';
+            echo'<br>';
+            echo '<input type="text" name="seat" placeholder=" Enter Seat Number Again" required="">';
             echo '<button type="submit" value="confirm1" name="confirm1" class="seat-selection-button">Confirm</button>';
             echo '</form>';
             if(isset($_POST['confirm1'])){
@@ -238,6 +239,10 @@
                         $stmt->bind_param("sssssss",$EMAIL,$movieName,$bookingTheatre,$bookingType,$bookingDate,$bookingTime,$seatNo);
                         $stmt->execute();
     }
+    echo '<form id="3" action="confirmation.php?Email='.$EMAIL.'&moviename='.$movieName.'&bookingTheatre='.$bookingTheatre.'&bookingType='.$bookingType.'&bookingDate='.$bookingDate.'&bookingTime='.$bookingTime.'" name="myform"  method="POST">';
+    echo'<br>';
+    echo '<button type="submit" value="confirm3" name="confirm3" class="seat-selection-button">Go to Confirmation page</button>';
+    echo '</form>';
       
     ?>
     </p>
