@@ -29,6 +29,13 @@ $sql = "SELECT * FROM movieTable";
         <div class="movies-container owl-carousel">
 
             <?php
+<<<<<<< Updated upstream
+=======
+            
+            $file=fopen("C:\\xampp\htdocs\Big-Cinema\Email.txt","w");
+            fwrite($file,$EMAIL);
+            fclose($file);
+>>>>>>> Stashed changes
 if ($result = mysqli_query($link, $sql)) {
     if (mysqli_num_rows($result) > 0) {
         for ($i = 0; $i <= 5; $i++) {

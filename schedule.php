@@ -16,6 +16,11 @@
 <body>
     <?php
 // $EMAIL = $_GET['Email'];
+<<<<<<< Updated upstream
+=======
+$file=fopen("C:\\xampp\htdocs\Big-Cinema\Email.txt","r");
+$EMAIL=fgets($file);
+>>>>>>> Stashed changes
 
 $link = mysqli_connect("localhost", "root", "", "cinema_db");
 $sql  = "SELECT * FROM movieTable";
@@ -47,7 +52,12 @@ if ($result = mysqli_query($link, $sql)) {
             echo '<h3>SYNOPSIS</h3>';
             echo '<p>' . $row['synopsis'] . '';
             echo '</p>';
+<<<<<<< Updated upstream
             echo '<div class="schedule-item"> DETAILS</a>';
+=======
+            echo '<div class="schedule-item"></a>';
+            echo '<a href="booking.php?id=' . $row['movieID'] . '&Email=' . $EMAIL . '"><i class="fas fa-ticket-alt"></i> Book a seat</a>';
+>>>>>>> Stashed changes
             echo '</div>';
             echo '</td>';
             echo '<td>';

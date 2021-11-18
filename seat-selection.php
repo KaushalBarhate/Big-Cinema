@@ -201,8 +201,10 @@
           echo $row2['Seat_no'];
           if($row2['Seat_no'] == $seatNo){
             $a=1;
-            echo "Seat is booked, Pick another seat";
+            echo " - Seat is booked, Pick another seat";
+            echo'<br>';
             echo '<form id="2" name="myform"  method="POST">';
+<<<<<<< Updated upstream
             echo'<br>';
             echo '<input type="text" name="seat" placeholder=" Enter Seat Number Again" required="">';
             echo '<button type="submit" value="confirm1" name="confirm1" class="seat-selection-button">Confirm</button>';
@@ -222,6 +224,26 @@
                         $stmt->execute();
     }
           }
+=======
+            // echo '<input type="text" name="seat" placeholder=" Enter Seat Number Again" required="">';
+            // // echo '<button type="submit" value="confirm1" name="confirm1" class="seat-selection-button">Confirm</button>';
+            // echo '</form>';
+    //         if(isset($_POST['confirm1'])){
+    //           $seatNo=$_POST['confirm1'];
+    //           $conn = new mysqli ($host, $dbusername, $dbpassword, $dbname);
+    //           $INSERT = "INSERT Into bookingtable(Email,
+    //                                      movieName,
+    //                                      bookingTheatre,
+    //                                      bookingType,
+    //                                      bookingDate,
+    //                                      bookingTime,
+    //                                      Seat_no)values(?,?,?,?,?,?,?)";
+    //                     $stmt = $conn->prepare($INSERT);
+    //                     $stmt->bind_param("sssssss",$EMAIL,$movieName,$bookingTheatre,$bookingType,$bookingDate,$bookingTime,$seatNo);
+    //                     $stmt->execute();
+    // }
+           }
+>>>>>>> Stashed changes
         }
         mysqli_close($link);
       }
