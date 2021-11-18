@@ -14,6 +14,12 @@
 <header></header>
 
 <body>
+    <?php
+// $EMAIL = $_GET['Email'];
+
+$link = mysqli_connect("localhost", "root", "", "cinema_db");
+$sql  = "SELECT * FROM movieTable";
+?>
     <div class="schedule-section">
         <h1>Schedule</h1>
         <div class="schedule-dates">
@@ -29,36 +35,41 @@
                     <th>SHOW</th>
                     <th>SCHEDULE IN CINEMA</th>
                 </tr>
-                <tr class="fade-scroll">
-                    <td>
-                        <h2>Dune</h2>
-                        <i class="far fa-clock"></i> 125m <i class="fas fa-desktop"></i> IMAX
-                        <h3>SYNOPSIS</h3>
-                        <p>Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people.     
-                        </p>
-                        <div class="schedule-item"> DETAILS</a>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="hall-type">
-                            <h3>PVR Cinemas</h3>
-                            <div>
-                                <div class="schedule-item"><i class="far fa-clock"></i></div>
-                                <div class="schedule-item">09:00 AM</div>
-                                <div class="schedule-item">11:30 AM</div>
-                                <div class="schedule-item">06:00 PM</div>
-                            </div>
-                        </div>
-                        <div class="hall-type">
-                            <h3>Cinépolis</h3>
-                            <div>
-                                <div class="schedule-item"><i class="far fa-clock"></i></div>
-                                <div class="schedule-item">09:00 AM</div>
-                                <div class="schedule-item">11:30 AM</div>
-                                <div class="schedule-item">06:00 PM</div>
-                            </div>
-                        </div>
-                        <div class="hall-type">
+            <?php
+if ($result = mysqli_query($link, $sql)) {
+    if (mysqli_num_rows($result) > 0) {
+        for ($i = 0; $i <= 5; $i++) {
+            $row = mysqli_fetch_array($result);
+            echo '<tr class="fade-scroll">';
+            echo '<td>';
+            echo '<h2>' . $row['movieTitle'] . '</h2>';
+            echo '<i class="far fa-clock"></i> 125m <i class="fas fa-desktop"></i> IMAX';
+            echo '<h3>SYNOPSIS</h3>';
+            echo '<p>' . $row['synopsis'] . '';
+            echo '</p>';
+            echo '<div class="schedule-item"> DETAILS</a>';
+            echo '</div>';
+            echo '</td>';
+            echo '<td>';
+            echo '<div class="hall-type">';
+            echo '<h3>PVR Cinemas</h3>';
+            echo '<div>';
+            echo '<div class="schedule-item"><i class="far fa-clock"></i></div>';
+            echo '<div class="schedule-item">09:00 AM</div>';
+            echo '<div class="schedule-item">11:30 AM</div>';
+            echo '<div class="schedule-item">06:00 PM</div>';
+            echo '</div>';
+            echo '</div>';
+            echo '<div class="hall-type">
+                                                <h3>Cinépolis</h3>
+                                                <div>
+                                                <div class="schedule-item"><i class="far fa-clock"></i></div>
+                                                <div class="schedule-item">09:00 AM</div>
+                                                <div class="schedule-item">11:30 AM</div>
+                                                <div class="schedule-item">06:00 PM</div>
+                                                </div>
+                                                </div>
+                                                <div class="hall-type">
                             <h3>INOX</h3>
                             <div>
                                 <div class="schedule-item"><i class="far fa-clock"></i></div>
@@ -68,89 +79,18 @@
                             </div>
                         </div>
                     </td>
-                </tr>
-                <tr class="fade-scroll">
-                    <td>
-                        <h2>Dune</h2>
-                        <i class="far fa-clock"></i> 125m <i class="fas fa-desktop"></i> IMAX
-                        <h3>SYNOPSIS</h3>
-                        <p>Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people.
-                        </p>
-                        <div class="schedule-item"> DETAILS</a>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="hall-type">
-                            <h3>PVR Cinemas</h3>
-                            <div>
-                                <div class="schedule-item"><i class="far fa-clock"></i></div>
-                                <div class="schedule-item">09:00 AM</div>
-                                <div class="schedule-item">11:30 AM</div>
-                                <div class="schedule-item">06:00 PM</div>
-                            </div>
-                        </div>
-                        <div class="hall-type">
-                            <h3>Cinépolis</h3>
-                            <div>
-                                <div class="schedule-item"><i class="far fa-clock"></i></div>
-                                <div class="schedule-item">09:00 AM</div>
-                                <div class="schedule-item">11:30 AM</div>
-                                <div class="schedule-item">06:00 PM</div>
-                            </div>
-                        </div>
-                        <div class="hall-type">
-                            <h3>INOX</h3>
-                            <div>
-                                <div class="schedule-item"><i class="far fa-clock"></i></div>
-                                <div class="schedule-item">09:00 AM</div>
-                                <div class="schedule-item">11:30 AM</div>
-                                <div class="schedule-item">06:00 PM</div>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-                <tr class="fade-scroll">
-                    <td>
-                        <h2>Dune</h2>
-                        <i class="far fa-clock"></i> 125m <i class="fas fa-desktop"></i> IMAX
-                        <h3>SYNOPSIS</h3>
-                        <p>Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people.
-                        </p>
-                        <div class="schedule-item"> DETAILS</a>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="hall-type">
-                            <h3>PVR Cinemas</h3>
-                            <div>
-                                <div class="schedule-item"><i class="far fa-clock"></i></div>
-                                <div class="schedule-item">09:00 AM</div>
-                                <div class="schedule-item">11:30 AM</div>
-                                <div class="schedule-item">06:00 PM</div>
-                            </div>
-                        </div>
-                        <div class="hall-type">
-                            <h3>Cinépolis</h3>
-                            <div>
-                                <div class="schedule-item"><i class="far fa-clock"></i></div>
-                                <div class="schedule-item">09:00 AM</div>
-                                <div class="schedule-item">11:30 AM</div>
-                                <div class="schedule-item">06:00 PM</div>
-                            </div>
-                        </div>
-                        <div class="hall-type">
-                            <h3>INOX</h3>
-                            <div>
-                                <div class="schedule-item"><i class="far fa-clock"></i></div>
-                                <div class="schedule-item">09:00 AM</div>
-                                <div class="schedule-item">11:30 AM</div>
-                                <div class="schedule-item">06:00 PM</div>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-        </div>
+                </tr>';
+        }
+        mysqli_free_result($result);
+    } else {
+        echo '<h4 class="no-annot">No Booking to our movies right now</h4>';
+    }} else {
+    echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+}
+mysqli_close($link);
+?>
+    </table>
+
 
 
     </div>
